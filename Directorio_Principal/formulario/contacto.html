@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eva Gutiérrez Fernández</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <header></header>
+    <form id="formulario" action="https://formspree.io/egutierrezff@fpvirtualaragon.es" method="POST">
+        <h1>FORMULARIO DE CONTACTO</h1>
+        <fieldset>
+            <legend> <strong>Datos personales</strong> </legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@ejemplo.com" required>
+
+            <label for="telefono">Teléfono:</label>
+
+            <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su teléfono">
+        </fieldset>
+
+        <fieldset>
+            <legend> <strong>Mensaje</strong> </legend>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escriba su mensaje aquí" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend> <strong>Intereses</strong> </legend>
+            <label><input type="checkbox" name="intereses[]" value="producto1"> Python</label>
+            <label><input type="checkbox" name="intereses[]" value="producto2"> JavaScript</label>
+            <label><input type="checkbox" name="intereses[]" value="servicio1"> Otro</label>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Reiniciar</button>
+    </form>
+</body>
+</html>
